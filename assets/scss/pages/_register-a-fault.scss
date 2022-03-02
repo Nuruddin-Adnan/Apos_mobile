@@ -1,0 +1,27 @@
+.register-a-fault{
+    background: #fbfbfe;
+
+    .register-header {
+        padding: 40px 0;
+
+        .back-btn {
+            color: $color-black;
+            padding-right: 15px;
+        }
+        .title {
+            text-align: center;
+            @include font-style(18px, $color-black, 700);
+            margin-top: -25px;
+        }
+    }
+
+    .register-body {
+        .form-floating{
+            .form-control {
+                &:focus {
+                    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.05);
+                }
+            }
+        }
+    }
+}

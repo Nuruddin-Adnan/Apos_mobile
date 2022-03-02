@@ -1,0 +1,110 @@
+@import "../abstracts/mixins";
+
+.navbar {
+    padding-top: 40px;
+
+    .nav-title {
+        @include font-style(18px, $color-white, 700);
+    }
+    .search-link {
+       font-size: 20px;
+       color: $color-white;
+    }
+    .btn:focus {
+        box-shadow: none;
+    }
+}
+
+
+// side nav
+.side-nave {
+    background: linear-gradient(315deg, $color-blue, $color-blue-light);
+    
+    .offcanvas-header {
+        padding-top: 40px;
+        .btn-close{
+            color: $color-white !important;
+            background: transparent;
+            opacity: 1;
+
+            &:focus {
+                box-shadow: none;
+            }
+        }
+    }
+
+    .offcanvas-body {
+        .profile {
+            background: linear-gradient(90deg, rgba($color-white, 0.1), transparent);
+            padding: 1rem;
+
+            .user-avatar {
+                padding-right: 10px;
+                img {
+                    width: 60px;
+                    height: 60px;
+                    border-radius: 50%;
+                    display: block;
+                    object-fit: cover;
+                }
+            }
+
+            .info {
+                .name {
+                    @include font-style(18px, $color-white, 700);
+                } 
+                .email{
+                    @include font-style(12px, $color-white, 500);
+                    opacity: 0.8;
+                }
+            }
+
+            .btn {
+                color: $color-white;
+                font-size: 25px;
+            }
+        } 
+
+        .main-nav{
+            .nav-list {
+                li {
+                    position: relative;
+                    padding: 10px 1rem;
+
+                    a {
+                        @include font-style(15px, $color-white, 700);
+
+                        i {
+                            width: 30px;
+                            text-align: center;
+                        }
+                    }
+
+                    &.active::before,
+                    &:hover::before {
+                        content:'';
+                        width: 4px;
+                        height: 100%;
+                        background: $color-white;
+                        position: absolute;
+                        left: 0;
+                        top: 0;
+                        border-top-right-radius: 5px;
+                        border-bottom-right-radius: 5px;
+                    }
+                }
+            }
+
+            .side-image {
+                box-shadow: -7px 5px 50px rgba($color-black, 0.15)
+            }
+        }
+
+        .nav-footer {
+            @include font-style(15px, rgba($color-white, 0.5), 600);
+            text-align: center;
+            padding-top: 40px;
+        }
+    }
+}
+  

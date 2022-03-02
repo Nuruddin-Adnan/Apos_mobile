@@ -1,0 +1,14 @@
+@import "../abstracts/mixins";
+
+.form-floating {
+    .form-control:focus {
+        box-shadow: none;
+        border-color: #3178ff;
+    }
+
+    .form-control {
+        @include font-style(16px, $color-black, 600);
+        border-radius: 8px;
+    }
+
+}

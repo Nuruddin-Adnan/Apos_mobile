@@ -1,0 +1,14 @@
+@import "../abstracts/mixins";
+
+.btn-blue {
+    @include font-style(16px, $color-white, 700);
+    background: linear-gradient(270deg, $color-blue, $color-blue-light);
+    padding: 1rem;
+    border: none;
+    border-radius: 8px;
+
+    &:hover {
+        color: $color-white;
+        background: linear-gradient(270deg, darken($color-blue, 5), darken($color-blue-light, 5));
+    }
+}

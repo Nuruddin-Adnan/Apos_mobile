@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Apos | Search</title>
+  <link rel='shortcut icon' href='assets/images/apos-logo.png' type='image/x-icon'>
+  <link rel="stylesheet" href="assets/css/all.min.css">
+  <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+  <!-- === search  section start === -->
+  <div class="search">
+    <div class="container px-0">
+      <div class="search-header d-flex align-items-center">
+        <a href="dashboard.html" class="back-btn">
+          <i class="far fa-arrow-left"></i>
+        </a>
+        <div class="position-relative w-100">
+          <input type="text" id="search-input" class="form-control form-control-lg" placeholder="Search here">
+          <i class="far fa-search position-absolute top-50 translate-middle"></i>
+        </div>
+      </div>
+
+      <!-- search by id -->
+      <div class="search-by-id" id="search-by-id">
+        <form>
+          <div class="form-floating mb-3">
+            <input type="text" class="form-control" placeholder="Tag ID" value="WBP1">
+            <label>Tag ID</label>
+          </div>
+          <div class="form-floating mb-3">
+            <input type="text" class="form-control" placeholder="VCC">
+            <label>VCC</label>
+          </div>
+          <div class="form-floating mb-3">
+            <input type="text" class="form-control" placeholder="Crossover">
+            <label>Crossover</label>
+          </div>
+          <div class="form-floating mb-3">
+            <input type="text" class="form-control" placeholder="Loop">
+            <label>Loop</label>
+          </div>
+          <div class="form-floating mb-4">
+            <input type="text" class="form-control" placeholder="Segment ID">
+            <label>Segment ID</label>
+          </div>
+          <button type="submit" class="btn btn-blue w-100">Search</button>
+        </form>
+      </div>
+
+      <!-- search by typing -->
+      <div class="search-by-typing d-none" id="search-by-typing">
+        <div class="recent-search">
+          <h4 class="title">Recent Searches</h4>
+          <div>
+            <button class="btn btn-outline-secondary">PAQ55YU</button>
+            <button class="btn btn-outline-secondary">WBP SP4KS12</button>
+            <button class="btn btn-outline-secondary">YUIKS78E</button>
+          </div>
+        </div>
+
+        <ul class="search-list">
+          <li>WBP <span class="text-muted">SP4KS12</span></li>
+          <li>WBP <span class="text-muted">WS4KS13</span></li>
+          <li>WBP <span class="text-muted">FG 4KS13</span></li>
+          <li>WBP <span class="text-muted">TY378GHKL</span></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <!-- ===//end of search section === -->
+
+
+
+
+ 
+
+
+  <script src="assets/js/jquery-3.5.1.min.js"></script>
+  <script src="assets/js/popper.js"></script>
+  <script src="assets/js/bootstrap.min.js"></script>
+  <script>
+    // search option change on typing
+    const searchInput = document.querySelector('#search-input');
+    const searchById = document.querySelector('#search-by-id')
+    const searchBytyping = document.querySelector('#search-by-typing')
+
+    searchInput.addEventListener('focus', function(){
+        searchById.classList.add('d-none');
+        searchBytyping.classList.remove('d-none');
+    })
+
+    searchInput.addEventListener('blur', function(){
+        searchById.classList.remove('d-none');
+        searchBytyping.classList.add('d-none');
+    })
+  </script>
+</body>
+</html>

@@ -1,0 +1,18 @@
+@import "../abstracts/mixins";
+
+.login {
+    .login-header {
+        @include font-style(18px, $text-darkblue, 700);
+        padding: 40px 15px 20px 15px;
+    }
+
+    .login-content {
+        padding: 20px 15px;
+        background: #f2f8fd;
+        min-height: 100vh;
+
+        .btn-blue {
+            margin: 30px 0;
+        }
+    }
+}

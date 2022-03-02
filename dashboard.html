@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Apos | Dashboard</title>
+  <link rel='shortcut icon' href='assets/images/apos-logo.png' type='image/x-icon'>
+  <link rel="stylesheet" href="assets/css/all.min.css">
+  <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+  <!-- === header section start === -->
+  <header class="header">
+    <div class="container px-0">
+      <nav class="navbar bg-blue-gradient">
+        <button class="btn sideNav-toggle-btn" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">
+          <svg 
+            xmlns="http://www.w3.org/2000/svg"
+            xmlns:xlink="http://www.w3.org/1999/xlink"
+            width="20px" height="14px">
+            <path fill-rule="evenodd"  fill="rgb(255, 255, 255)"
+            d="M1.46,0.0 L18.953,0.0 C19.531,0.0 20.0,0.468 20.0,1.46 C20.0,1.625 19.531,2.93 18.953,2.93 L1.46,2.93 C0.468,2.93 0.0,1.625 0.0,1.46 C0.0,0.468 0.468,0.0 1.46,0.0 Z"/>
+            <path fill-rule="evenodd"  fill="rgb(255, 255, 255)"
+            d="M1.46,5.562 L14.703,5.562 C15.281,5.562 15.750,6.31 15.750,6.609 C15.750,7.187 15.281,7.656 14.703,7.656 L1.46,7.656 C0.468,7.656 0.0,7.187 0.0,6.609 C0.0,6.31 0.468,5.562 1.46,5.562 Z"/>
+            <path fill-rule="evenodd"  fill="rgb(255, 255, 255)"
+            d="M1.46,11.156 L9.859,11.156 C10.437,11.156 10.906,11.624 10.906,12.203 C10.906,12.781 10.437,13.250 9.859,13.250 L1.46,13.250 C0.468,13.250 0.0,12.781 0.0,12.203 C0.0,11.624 0.468,11.156 1.46,11.156 Z"/>
+          </svg>
+        </button>
+        <h3 class="nav-title">Dashboard</h3>
+        <a href="search.html" class="btn search-link">
+          <i class="far fa-search"></i>
+        </a>
+      </nav>
+    </div>
+  </header>
+  <!-- ===//end of header section === -->
+
+
+
+  <!-- === side-name section start === -->
+  <div class="offcanvas offcanvas-start position-absolute side-nave" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+    <div class="offcanvas-header">
+      <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"><i class="far fa-times"></i></button>
+    </div>
+    <div class="offcanvas-body p-0">
+      <div class="profile d-flex align-items-center justify-content-between">
+        <div class="d-flex align-items-center">
+          <div class="user-avatar"><img src="assets/images/user-avatar.png" alt="uaer avatar" class="img-fluid"></div>
+          <div class="info">
+            <h6 class="name">William Miller</h6>
+            <h5 class="email">william.miller@domain.com</h5>
+          </div>
+        </div>
+        <a href="#" class="btn">
+          <i class="far fa-angle-right"></i>
+        </a>
+      </div>
+      <nav class="main-nav position-relative mt-5">
+        <ul class="ps-0 nav-list">
+          <li class="active"><a href="#"><i class="far fa-border-all"></i> Dashboard</a></li>
+          <li><a href="register-a-fault.html"><i class="far fa-edit"></i> Register a Fault</a></li>
+          <li class="mb-4"><a href="#"><i class="far fa-user-plus"></i> Administration</a></li>
+          <li><a href="#"><i class="far fa-book-open"></i> Terms & Conditions</a></li>
+          <li><a href="#"><i class="far fa-file-alt"></i> Privacy Policy</a></li>
+          <li class="mb-4"><a href="#"><i class="far fa-badge-check"></i> About Us</a></li>
+          <li><a href="#"><i class="far fa-cog"></i> Settings</a></li>
+          <li><a href="login.html"><i class="far fa-sign-in"></i> Logout</a></li>
+        </ul>
+        <img src="assets/images/side-nave.png" alt="side-nave" class="img-fluid position-absolute top-0 end-0 side-image">
+      </nav>
+      <p class="nav-footer">Version 1.2</p>
+    </div>
+  </div>
+  <!-- ===//end of side-name section === -->
+
+
+  <!-- === map-interface section start === -->
+  <section class="map-interface">
+    <div class="container px-0">
+      <img src="assets/images/map-interfacae.png" alt="map" class="w-100" usemap="#image_map">
+      <map name="image_map">
+        <area alt="" title="" href="#" coords="265,301,332,355" shape="rect" data-bs-toggle="modal" data-bs-target="#information-modal">
+        <area alt="" title="" href="#" coords="68,500,136,561" shape="rect" data-bs-toggle="modal" data-bs-target="#information-modal">
+      </map>
+    </div>
+  </section>
+  <!-- ===//end of map-interface section === -->
+
+
+
+  <!-- === information-modal section start === -->
+  <div class="modal fade" id="information-modal" tabindex="-1" aria-labelledby="information-modal" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header border-bottom-0">
+          <h5 class="modal-title" id="information-modal">Information</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"><i class="far fa-times"></i></button>
+        </div>
+        <div class="modal-body">
+          <h4 class="highlighted-text">WBP1 - 1292/NW3LP</h4>
+          <ul class="information-list ps-0">
+            <li>
+              <div class="d-flex">
+                <div class="w-50">
+                  <label>Label</label>
+                  <h4 class="value">Value goes here</h4>
+                </div>
+                <div class="w-50">
+                  <label>Label</label>
+                  <h4 class="value">Value goes here</h4>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="d-flex">
+                <div class="w-50">
+                  <label>Label</label>
+                  <h4 class="value">Value goes here</h4>
+                </div>
+                <div class="w-50">
+                  <label>Label</label>
+                  <h4 class="value">Value goes here</h4>
+                </div>
+              </div>
+            </li>
+            <li>
+              <label>Label</label>
+              <h4 class="value">Value goes here</h4>
+            </li>
+            <li>
+              <label>Label</label>
+              <h4 class="value">Value goes here</h4>
+            </li>
+            <li>
+              <label>Label</label>
+              <h4 class="value">Value goes here</h4>
+            </li>
+            <li>
+              <label>Label</label>
+              <h4 class="value">Value goes here</h4>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- ===//end of information-modal section === -->
+  
+
+ 
+ 
+
+
+  <script src="assets/js/jquery-3.5.1.min.js"></script>
+  <script src="assets/js/popper.js"></script>
+  <script src="assets/js/bootstrap.min.js"></script>
+  <script src="assets/js/jquery.rwdImageMaps.min.js"></script>
+  <script src="assets/js/custom.js"></script>
+  <script>
+    $(document).ready(function(e) {
+        $('img[usemap]').rwdImageMaps();
+    });
+  </script>
+</body>
+</html>
